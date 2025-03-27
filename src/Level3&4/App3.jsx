@@ -1,9 +1,11 @@
 import React from 'react'
-import Task3 from '../../Level2/Task3'
+import Task3 from './Task2'
 
 const App3 = () => {
   return (
-    <Task3 name="Musthafa Samsudeen S"/>
+    <div>
+        <Task3 />
+    </div>
   )
 }
 
