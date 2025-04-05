@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App10 from './L6T10/App10'
-
+import { Provider } from 'react-redux';
+import { store } from './L6T8/Store'; // Corrected the import path
+import CounterApp from './L6T8/CounterApp'; // Corrected the import path
 
 
 //import './index.css'
@@ -10,7 +11,9 @@ import App10 from './L6T10/App10'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-   <App10 />
+    <Provider store={store}>
+      <CounterApp />
+    </Provider>
     
   </StrictMode>,
 )
